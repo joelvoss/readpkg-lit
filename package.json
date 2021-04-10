@@ -1,0 +1,47 @@
+{
+  "name": "readpkg-lit",
+  "description": "This package finds and parses the closest `package.json`",
+  "version": "0.0.1",
+  "author": "Joel Voss <mail@joelvoss.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/joelvoss/readpkg-lit",
+  "bugs": {
+    "url": "https://github.com/joelvoss/readpkg-lit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelvoss/readpkg-lit.git"
+  },
+  "source": "src/index.js",
+  "main": "dist/readpkg-lit.js",
+  "module": "dist/readpkg-lit.module.js",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "./Taskfile.sh",
+    "test": "./Taskfile.sh test",
+    "prepublishOnly": "./Taskfile.sh build"
+  },
+  "dependencies": {
+    "findup-lit": "^1.0.0",
+    "normalize-package-data": "^3.0.2"
+  },
+  "devDependencies": {
+    "@jvdx/core": "^2.2.7",
+    "fixturez": "^1.1.0"
+  },
+  "prettier": "@jvdx/prettier-config",
+  "prettierIgnore": [
+    "tests/",
+    "dist/"
+  ],
+  "eslintConfig": {
+    "extends": "@jvdx/eslint-config"
+  },
+  "eslintIgnore": [
+    "tests/",
+    "dist/"
+  ]
+}
