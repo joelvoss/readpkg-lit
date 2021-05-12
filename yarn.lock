@@ -3225,10 +3225,10 @@ find-up@^4.0.0, find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-findup-lit@^1.0.0, findup-lit@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/findup-lit/-/findup-lit-1.1.0.tgz#6c532a014b872ab99c90294d95dbb9ac13562411"
-  integrity sha512-3AqVUsSo5vjluQmia+zKX0yGypjbGK5/kuJerggF/KVIZ0hPw1eaRTnQxvjPxjjcntFKbgdI61KWgp9Cbs2bnA==
+findup-lit@^1.1.0, findup-lit@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/findup-lit/-/findup-lit-1.1.1.tgz#9f231ac3e279ade87a2410f581ed5d899448f2f2"
+  integrity sha512-/i8oEGqG/50vsBkf0OjCuL/arhy1GWYU9pmBjzpO+zWhQ0MgYeQ5DcQ7gj3dXdr1FD10Rt5RaUnbLMuEhuG1FQ==
   dependencies:
     plimit-lit "^1.1.0"
 
@@ -5784,11 +5784,11 @@ read-pkg@^5.2.0:
     type-fest "^0.6.0"
 
 readpkg-lit@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/readpkg-lit/-/readpkg-lit-1.0.0.tgz#d98c8d514ec37456c2b12f786322227d1a702c29"
-  integrity sha512-ktnfvnj0bC7NXUgF93ji9XkwqwW0IFKpUFG1vZvhhpPl65XOE+4qFb95/jHxgYjND0bpXwTU5b/USHpO43lFAw==
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/readpkg-lit/-/readpkg-lit-1.1.3.tgz#a457ff0861d20d3501224aac3dcbd05b2de983cd"
+  integrity sha512-j9/3fxHXwbJcsFkxQ/a/6op9kz5/uvx4YhKTrnWD4PxESTwOPR/DbJ/IofvUivZitZBwg/Tc7oeNeEpYs/Rq5w==
   dependencies:
-    findup-lit "^1.0.0"
+    findup-lit "^1.1.0"
     normalize-package-data "^3.0.2"
 
 regenerate-unicode-properties@^8.2.0:

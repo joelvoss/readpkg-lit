@@ -30,7 +30,7 @@
     "prepublishOnly": "./Taskfile.sh build"
   },
   "dependencies": {
-    "findup-lit": "^1.1.0",
+    "findup-lit": "^1.1.1",
     "normalize-package-data": "^3.0.2"
   },
   "devDependencies": {
