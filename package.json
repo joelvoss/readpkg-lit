@@ -14,7 +14,12 @@
   },
   "source": "src/index.js",
   "main": "dist/readpkg-lit.js",
-  "module": "dist/readpkg-lit.module.js",
+  "module": "dist/readpkg-lit.m.js",
+  "exports": {
+    "require": "./dist/readpkg-lit.js",
+    "default": "./dist/readpkg-lit.modern.js"
+  },
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "LICENSE"
