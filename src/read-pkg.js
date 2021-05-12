@@ -1,5 +1,5 @@
 import fs, { promises as fsAsync } from 'fs';
-import path from 'path';
+import * as path from 'path';
 import normalizePackageData from 'normalize-package-data';
 
 export async function readPackage({
