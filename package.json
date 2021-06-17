@@ -30,11 +30,11 @@
     "prepublishOnly": "./Taskfile.sh build"
   },
   "dependencies": {
-    "findup-lit": "^1.1.2",
+    "findup-lit": "^1.1.3",
     "normalize-package-data": "^3.0.2"
   },
   "devDependencies": {
-    "@jvdx/core": "^2.3.4",
+    "@jvdx/core": "^2.3.6",
     "fixturez": "^1.1.0"
   },
   "prettier": "@jvdx/prettier-config",
