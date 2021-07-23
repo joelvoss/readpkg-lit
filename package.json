@@ -34,7 +34,7 @@
     "normalize-package-data": "^3.0.2"
   },
   "devDependencies": {
-    "@jvdx/core": "^2.3.6",
+    "@jvdx/core": "^2.3.7",
     "fixturez": "^1.1.0"
   },
   "prettier": "@jvdx/prettier-config",
