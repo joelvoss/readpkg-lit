@@ -12,12 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/joelvoss/readpkg-lit.git"
   },
+  "type": "module",
   "source": "src/index.js",
-  "main": "dist/readpkg-lit.js",
-  "module": "dist/readpkg-lit.m.js",
+  "main": "dist/readpkg-lit.cjs",
+  "module": "dist/readpkg-lit.module.js",
   "exports": {
-    "import": "./dist/readpkg-lit.modern.js",
-    "require": "./dist/readpkg-lit.js"
+    "require": "./dist/readpkg-lit.cjs",
+    "import": "./dist/readpkg-lit.modern.js"
   },
   "types": "dist/index.d.ts",
   "files": [
