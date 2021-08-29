@@ -32,10 +32,10 @@
   },
   "dependencies": {
     "findup-lit": "^1.2.0",
-    "normalize-package-data": "^3.0.2"
+    "normalize-package-data": "^3.0.3"
   },
   "devDependencies": {
-    "@jvdx/core": "^2.5.1",
+    "@jvdx/core": "^2.6.0",
     "fixturez": "^1.1.0"
   },
   "prettier": "@jvdx/prettier-config",
