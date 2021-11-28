@@ -1,7 +1,7 @@
 {
   "name": "readpkg-lit",
   "description": "This package finds and parses the closest `package.json`",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "Joel Voss <mail@joelvoss.com>",
   "license": "MIT",
   "homepage": "https://github.com/joelvoss/readpkg-lit",
