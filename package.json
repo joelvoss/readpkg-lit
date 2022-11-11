@@ -17,6 +17,7 @@
   "main": "dist/readpkg-lit.cjs",
   "module": "dist/readpkg-lit.module.js",
   "exports": {
+    "types": "./dist/index.d.ts",
     "require": "./dist/readpkg-lit.cjs",
     "import": "./dist/readpkg-lit.modern.js"
   },
@@ -31,12 +32,12 @@
     "prepublishOnly": "./Taskfile.sh build"
   },
   "dependencies": {
-    "findup-lit": "^1.5.0",
+    "findup-lit": "^1.6.0",
     "normalize-package-data": "^5.0.0",
-    "readpkg-lit": "^1.4.0"
+    "readpkg-lit": "^1.5.0"
   },
   "devDependencies": {
-    "@jvdx/core": "^3.0.0",
+    "@jvdx/core": "^3.1.0",
     "fixturez": "^1.1.0"
   },
   "prettier": "@jvdx/prettier-config",
