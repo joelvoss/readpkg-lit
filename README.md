@@ -2,10 +2,6 @@
 
 This package finds and parses the closes `package.json`.
 
-## Requirements
-
-- Node v12+
-
 ## Installation
 
 ```bash
