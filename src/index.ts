@@ -1,21 +1,18 @@
-import path from 'path';
+import path from 'node:path';
 import { findUp, findUpSync } from 'findup-lit';
 import { readPackage, readPackageSync } from './read-pkg';
 
 ////////////////////////////////////////////////////////////////////////////////
 
-/**
- * @typedef {Object} Options
- * @prop {string} [cwd]
- * @prop {boolean} [normalize]
- */
+type Options = {
+	cwd?: string;
+	normalize?: boolean;
+};
 
 /**
- * readPackageUp
- * @param {Options} [options]
- * @returns {Promise<{ packageJson: Object, path: string }>}
+ * readPackageUp finds and reads a package.json file.
  */
-export async function readPackageUp(options) {
+export async function readPackageUp(options?: Options) {
 	const filePath = await findUp('package.json', options);
 	if (!filePath) return;
 
@@ -31,11 +28,9 @@ export async function readPackageUp(options) {
 ////////////////////////////////////////////////////////////////////////////////
 
 /**
- * readPackageUpSync
- * @param {Options} [options]
- * @returns {{ packageJson: Object, path: string }}
+ * readPackageUpSync finds and reads a package.json file synchronously.
  */
-export function readPackageUpSync(options) {
+export function readPackageUpSync(options?: Options) {
 	const filePath = findUpSync('package.json', options);
 	if (!filePath) return;
 

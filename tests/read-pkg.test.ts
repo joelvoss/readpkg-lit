@@ -1,16 +1,16 @@
-import path from 'path';
-import fixtures from 'fixturez';
+import { describe, beforeEach, afterEach, test, expect } from 'vitest';
+import path from 'node:path';
+import { readPackage, readPackageSync } from '../src/read-pkg';
 
 ////////////////////////////////////////////////////////////////////////////////
 
 const cwd = __dirname;
-const f = fixtures(cwd);
+const fixtures = path.resolve(__dirname, 'fixtures');
 
 ////////////////////////////////////////////////////////////////////////////////
 
 describe(`readPackage`, () => {
-	const { readPackage } = require('../src/read-pkg');
-	let fixturePath = f.find('read-pkg');
+	const fixturePath = path.join(fixtures, 'read-pkg');
 
 	beforeEach(() => {
 		process.chdir(fixturePath);
@@ -35,8 +35,7 @@ describe(`readPackage`, () => {
 ////////////////////////////////////////////////////////////////////////////////
 
 describe(`readPackageSync`, () => {
-	const { readPackageSync } = require('../src/read-pkg');
-	let fixturePath = f.find('read-pkg');
+	const fixturePath = path.join(fixtures, 'read-pkg');
 
 	beforeEach(() => {
 		process.chdir(fixturePath);

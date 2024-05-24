@@ -1,24 +1,20 @@
-import fs, { promises as fsAsync } from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import fsAsync from 'node:fs/promises';
+import path from 'node:path';
 import normalizePackageData from 'normalize-package-data';
 
 ////////////////////////////////////////////////////////////////////////////////
 
-/**
- * @typedef {Object} ReadOptions
- * @prop {string} [cwd]
- * @prop {boolean} [normalize]
- */
+type ReadOptions = {
+	cwd?: string;
+	normalize?: boolean;
+};
 
 /**
  * readPackage
- * @param {ReadOptions} options
- * @returns {Promise<Object>}
  */
-export async function readPackage({
-	cwd = process.cwd(),
-	normalize = true,
-} = {}) {
+export async function readPackage(options: ReadOptions = {}) {
+	const { cwd = process.cwd(), normalize = true } = options;
 	const filePath = path.resolve(cwd, 'package.json');
 	const jsonStr = await fsAsync.readFile(filePath, 'utf8');
 	const json = JSON.parse(jsonStr);
@@ -34,13 +30,9 @@ export async function readPackage({
 
 /**
  * readPackageSync
- * @param {ReadOptions} options
- * @returns {Object}
  */
-export function readPackageSync({
-	cwd = process.cwd(),
-	normalize = true,
-} = {}) {
+export function readPackageSync(options: ReadOptions = {}) {
+	const { cwd = process.cwd(), normalize = true } = options;
 	const filePath = path.resolve(cwd, 'package.json');
 	const jsonStr = fs.readFileSync(filePath, 'utf8');
 	const json = JSON.parse(jsonStr);
