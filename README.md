@@ -68,6 +68,4 @@ help you develop.
 
 ---
 
-_This project was set up by @jvdx/core_
-
 [normalize-package-data]: https://github.com/npm/normalize-package-data#what-normalization-currently-entails
