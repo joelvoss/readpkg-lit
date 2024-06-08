@@ -32,7 +32,7 @@ typecheck() {
 
 lint() {
   echo "Running eslint..."
-  eslint .
+  eslint src
 }
 
 test() {
