@@ -1,5 +1,5 @@
-import { describe, beforeEach, afterEach, test, expect } from 'vitest';
 import path from 'node:path';
+import { afterEach, beforeEach, describe, expect, test } from 'vitest';
 
 import { readPackageUp, readPackageUpSync } from '../src/index';
 
