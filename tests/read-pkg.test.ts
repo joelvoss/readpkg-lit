@@ -1,5 +1,7 @@
 import path from 'node:path';
+
 import { afterEach, beforeEach, describe, expect, test } from 'vitest';
+
 import { readPackage, readPackageSync } from '../src/read-pkg';
 
 ////////////////////////////////////////////////////////////////////////////////

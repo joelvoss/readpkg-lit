@@ -1,4 +1,5 @@
 import path from 'node:path';
+
 import { afterEach, beforeEach, describe, expect, test } from 'vitest';
 
 import { readPackageUp, readPackageUpSync } from '../src/index';

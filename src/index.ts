@@ -1,5 +1,7 @@
 import path from 'node:path';
+
 import { findUp, findUpSync } from 'findup-lit';
+
 import { readPackage, readPackageSync } from './read-pkg';
 
 ////////////////////////////////////////////////////////////////////////////////
