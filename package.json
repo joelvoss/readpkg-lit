@@ -47,6 +47,6 @@
   },
   "dependencies": {
     "findup-lit": "2.3.0",
-    "normalize-package-data": "8.0.0"
+    "normalize-package-data": "9.0.0"
   }
 }
